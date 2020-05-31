@@ -8,6 +8,7 @@ const TodoForm = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     saveTodo(todo);
+    event.target.reset();
   };
 
   const handleInputChange = (event) => {

@@ -73,8 +73,11 @@ form div {
   font-size: 1em;
 }
 
+.undone span:first-of-type {
+  padding: 10px;
+}
+
 .done span:first-of-type, .undone span:first-of-type {
-  padding: 3px;
   margin-right: 10px;
   border: 1px solid #CFD0D5;
   border-radius: 3px;
@@ -96,6 +99,12 @@ form div {
   color: #fff;
 }
 
+.done span:first-of-type:before {
+  content: "✓";
+  color: #56596a;
+  padding: 4px;
+}
+
 li {
   border-top: 1px solid #CFD0D5;
   border-bottom: 1px solid #CFD0D5;
@@ -111,11 +120,6 @@ li div {
 
 li+li {
   border-top: none;
-}
-
-.icon:before {
-  content: "✓";
-  color: #56596a;
 }
 
 .close {

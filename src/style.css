@@ -73,7 +73,7 @@ form div {
   font-size: 1em;
 }
 
-.done span, .undone span {
+.done span:first-of-type, .undone span:first-of-type {
   padding: 3px;
   margin-right: 10px;
   border: 1px solid #CFD0D5;
@@ -84,11 +84,15 @@ form div {
   opacity: 0.6;
 }
 
-.done span {
+.done span:nth-child(2) {
+  text-decoration: line-through;
+}
+
+.done spanspan:first-of-type {
   opacity: 1;
 }
 
-.undone span {
+.undone spanspan:first-of-type {
   color: #fff;
 }
 

@@ -18,7 +18,7 @@ function TodoList() {
         <li className="list-group-item" key={index}>
           <div className={todo.done ? "done" : "undone"}>
             <span className="icon" onClick={() => handleDone(index)}></span>
-            {todo.title}
+            <span>{todo.title}</span>
             <button
               type="button"
               className="close"

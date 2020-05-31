@@ -7,7 +7,7 @@ const TodoProvider = ({ children }) => {
     { id: 1, title: "Estudar react", done: true },
     { id: 2, title: "Estudar webpack", done: false },
     { id: 3, title: "Estudar context", done: false },
-    { id: 4, title: "learn redux", done: false },
+    { id: 4, title: "Estudar redux", done: false },
   ]);
 
   const saveTodo = (todo) => {
@@ -28,9 +28,7 @@ const TodoProvider = ({ children }) => {
 
   const checkTodo = (todoIndex) => {
     const todo = todos[todoIndex];
-    todos.splice(todoIndex, 1);
     todo.done = !todo.done;
-    todo.done ? todos.push(todo) : todos.unshift(todo);
 
     setTodos([...todos]);
   };

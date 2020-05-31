@@ -8,7 +8,7 @@ const App = () => {
   return (
     <TodoProvider>
       <div className="todoForm">
-        <h3 className="title">Todo List</h3>
+        <h3 className="title">Lista de tarefas</h3>
         <TodoForm />
         <TodoList />
       </div>

@@ -19,14 +19,16 @@ const TodoForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="form-inline">
-      <input
-        type="text"
-        name="title"
-        className="form-control"
-        placeholder="Nova tarefa"
-        onChange={handleInputChange}
-      />
-      <button type="submit" className="btn btn-default" />
+      <div>
+        <input
+          type="text"
+          name="title"
+          className="form-control"
+          placeholder="Nova tarefa"
+          onChange={handleInputChange}
+        />
+        <button type="submit" className="btn btn-default" />
+      </div>
     </form>
   );
 };

@@ -13,22 +13,23 @@ function TodoList() {
   };
 
   return (
-    <>
+    <ul>
       {todos.map((todo, index) => (
-        <li className="list-group-item">
+        <li className="list-group-item" key={index}>
           <div className={todo.done ? "done" : "undone"}>
-            <span
-              className="glyphicon glyphicon-ok icon"
-              onClick={handleDone}
-            ></span>
+            <span className="icon" onClick={() => handleDone(index)}></span>
             {todo.title}
-            <button type="button" className="close" onClick={handleDelete}>
+            <button
+              type="button"
+              className="close"
+              onClick={() => handleDelete(index)}
+            >
               &times;
             </button>
           </div>
         </li>
       ))}
-    </>
+    </ul>
   );
 }
 
